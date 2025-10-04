@@ -9,7 +9,7 @@ COPY package*.json ./
 # COPY yarn.lock ./  # si tu utilises Yarn
 
 # Installer les dépendances
-RUN npm ci --production=false
+RUN npm install
 # RUN yarn install --frozen-lockfile  # si Yarn
 
 # Copier tout le code source
